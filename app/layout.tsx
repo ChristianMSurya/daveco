@@ -24,13 +24,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}
-      >
-        <div className="min-h-screen bg-white">
-          {children}
-        </div>
-      </body>
+      <head>
+        <title>DaveCo</title>
+        <meta name="description" content="Your premier destination for fine spirits and craft beer" />
+      </head>
+      <body className="font-['Helvetica'] antialiased">{children}</body>
     </html>
   );
 }
